@@ -7,6 +7,12 @@ body {
     box-sizing: border-box;
 }
 
+button {
+    border: none;
+
+    background: none;
+}
+
 .container {
     width: 1440px;
 }
@@ -89,6 +95,9 @@ body {
 }
 
 .teachers-unit {
+    position: relative;
+
+    margin-right: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +113,8 @@ body {
 }
 
 .teachers-name {
+    margin-bottom: 10px;
+
     font-family: Roboto Condensed;
     font-style: italic;
     font-weight: bold;
@@ -114,6 +125,8 @@ body {
 }
 
 .teachers-xp {
+    margin-bottom: 43px;
+
     font-family: Roboto;
     font-style: italic;
     font-weight: normal;
@@ -121,4 +134,37 @@ body {
     line-height: 25px;
 
     color: #AFAFAF;
+}
+
+.teachers-xp::after {
+    content: url('img/blue-rectangle.png');
+
+    position: absolute;
+    left: 115px;
+    bottom: 57px;
+}
+
+.slider-control {
+display: flex;
+align-items: center;
+}
+
+.slider-button-previous {
+    cursor: pointer;
+}
+
+.slider-counter {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+}
+
+.slider-button-next {
+    cursor: pointer;
 }
